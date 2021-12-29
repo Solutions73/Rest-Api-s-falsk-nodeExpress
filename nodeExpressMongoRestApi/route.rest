@@ -1,0 +1,28 @@
+GET http://127.0.0.1:27017/subscribers
+
+###
+
+GET http://127.0.0.1:27017/subscribers/12
+
+###
+
+POST http://127.0.0.1:27017/subscribers
+content-type: application/json
+
+{
+    "name": "Coder",
+    "subscribedToChannel": "The Coder"
+}
+
+###
+
+DELETE http://127.0.0.1:27017/subscribers
+
+
+###
+PATCH http://127.0.0.1:27017/subscribers
+content-type: application/json
+
+{
+    "name": "New Name"
+}
